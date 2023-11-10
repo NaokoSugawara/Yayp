@@ -1,0 +1,57 @@
+
+{
+    entities: {
+        users: {
+            1:{
+                "userId": "123",
+                "username": "Eddie Bauer",
+                "email": "oaiyosa@gmail.com"
+            }
+        }
+
+        reviews: {
+            1:{
+                "reviewId": "5678",
+                "userId": "123",
+                "businessId": "12345",
+                "body": "Best place ever!",
+            }
+        }
+        
+        business: {
+            1:{
+                "businessId": "12345",
+                "name": "Minion Restaurant",
+                "address": "475 3rd St",
+                "city": "San Francisco",
+                "state": "CA",
+                "postal code": "94107",
+                "stars": 5.0,
+                "reviewCount": 1198,
+                "categories": [
+                    "Mexican",
+                    "Burgers",
+                    "Gastropubs"
+                ],
+                "hours": {
+                    "Monday": "10:00-21:00",
+                    "Tuesday": "10:00-21:00",
+                    "Friday": "10:00-21:00",
+                    "Wednesday": "10:00-21:00",
+                    "Thursday": "10:00-21:00",
+                    "Sunday": "11:00-18:00",
+                    "Saturday": "10:00-21:00"
+                }
+            }
+        },
+    ui: {
+        loading: true/false,
+        modal: true/false
+    },
+    errors: {
+        login: ["Incorrect email/password combination"],
+        reviewsForm: ["Review body cannot be blank"],
+    },
+    session: { currentUserId: 25 }
+    }   
+}
