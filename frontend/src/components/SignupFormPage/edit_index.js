@@ -1,23 +1,28 @@
 import React, { useState } from "react";
-import * as sessionActions from "../../store/session";
 import { useDispatch, useSelector } from "react-redux";
 import { Redirect } from "react-router-dom";
-import './LoginForm.css';
+import * as sessionActions from "../../store/session";
+import './SignupForm.css';
 
-function LoginFormPage() {
+function SignupFormPage() {
   const dispatch = useDispatch();
   const sessionUser = useSelector(state => state.session.user);
-  const [credential, setCredential] = useState("");
+  const [email, setEmail] = useState("");
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [zipcode, setZipcode] = useState("");
   const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
   const [errors, setErrors] = useState([]);
 
-  if (sessionUser) return <Redirect to="/" />;
+  // if (sessionUser) return <Redirect to="/" />;
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setErrors([]);
-    return dispatch(sessionActions.login({ credential, password }))
-      .catch(async (res) => {
+    if (password === confirmPassword) {
+      setErrors([]);
+      return dispatch(sessionActions.signup({ email, firstName, lastName, zipcode, password }))
+        .catch(async (res) => {
         let data;
         try {
           // .clone() essentially allows you to read the response body twice
@@ -29,6 +34,8 @@ function LoginFormPage() {
         else if (data) setErrors([data]);
         else setErrors([res.statusText]);
       });
+    }
+    return setErrors(['Confirm Password field must be the same as the Password field']);
   };
 
   return (
@@ -62,6 +69,8 @@ function LoginFormPage() {
         <div class="signin3">
         </div>
         <div class="signin4">
+
+
           <form class="form" onSubmit={handleSubmit}>
             <ul>
               {errors.map(error => <li key={error}>{error}</li>)}
@@ -73,8 +82,8 @@ function LoginFormPage() {
                     <input 
                       class="form-input"
                       type="email"
-                      value={credential}
-                      onChange={(e) => setCredential(e.target.value)}
+                      // value={credential}
+                      // onChange={(e) => setCredential(e.target.value)}
                       required />
                       <span class="form-span">
                         Email
@@ -90,8 +99,8 @@ function LoginFormPage() {
                     <input 
                       class="form-input"
                       type="password"
-                      value={password}
-                      onChange={(e) => setPassword(e.target.value)}
+                      // value={password}
+                      // onChange={(e) => setPassword(e.target.value)}
                       required />
                       <span class="form-span">
                         password
@@ -106,6 +115,8 @@ function LoginFormPage() {
             <div class="form-bottom">
             </div>
           </form>
+
+
         </div>
         <div class="signin5">
         </div>
@@ -120,4 +131,4 @@ function LoginFormPage() {
   );
 }
 
-export default LoginFormPage;
+export default SignupFormPage;
