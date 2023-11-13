@@ -1,35 +1,31 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
-import { useSelector } from 'react-redux';
-import ProfileButton from './ProfileButton';
-// import LoginFormModal from '../LoginFormModal';
 import './Navigation.css';
+import NavigationBar from '../NavigationBar';
+import ImageCarousel from '../ImageCarousel';
+import LoginFormPage from '../LoginFormPage';
+import SignupFormPage from '../SignupFormPage';
+import { Route, Switch } from "react-router-dom";
 
 function Navigation() {
-  const sessionUser = useSelector(state => state.session.user);
-
-  let sessionLinks;
-  if (sessionUser) {
-    sessionLinks = (
-      <ProfileButton user={sessionUser} />
-    );
-  } else {
-    sessionLinks = (
-      <>
-        {/* <LoginFormModal /> */}
-        <NavLink to="/signup">Sign Up</NavLink>
-        <NavLink to="/login">Login</NavLink>
-      </>
-    );
-  }
 
   return (
-    <ul>
-      <li>
-        <NavLink exact to="/">Home</NavLink>
-        {sessionLinks}
-      </li>
-    </ul>
+    <>
+      <Switch>
+        <Route path="/login" >
+          <LoginFormPage />
+        </Route>
+        <Route path="/signup">
+          <SignupFormPage />
+        </Route>
+      </Switch> 
+
+      <NavigationBar />
+      {/* <SignupFormPage />  */}
+
+      <ImageCarousel />
+      {/* <Footer /> */}
+    </>
+
   );
 }
 
