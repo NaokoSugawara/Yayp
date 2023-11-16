@@ -1,0 +1,104 @@
+.outermost {
+    width: 1519.2px;
+    height: 625.6px;
+    background-color: antiquewhite;
+}
+
+.business-body {
+    width: 1480px;
+    height: 625.6px;
+    margin-left: auto;
+    margin-right: auto;
+    /* max-width: 1480px; */
+    border-color: rgba(235,235,235,1);
+    /* text-size-adjust: 100%; */
+}
+
+.business-body2 {
+    width: 1416px;
+    height: 625.6px;
+    margin-left: 32px;
+    margin-right: 32px;
+    border-color: rgba(235,235,235,1);
+    padding: 0px;
+    border: 0px;
+    font: inherit;
+    vertical-align: baseline;
+    /* text-size-adjust: 100%; */
+}
+
+.business-body3 {
+    width: 1448px;
+    height: 625.6px;
+    margin-left: -16px;
+    margin-right: -16px;
+    /* border-collapse: initial; */
+    border-spacing: 32px 0;
+    display: flex;
+    /* min-width: 100%; */
+    /* table-layout: auto; */
+    border-color: rgba(235,235,235,1);
+    flex-direction: row;
+}
+
+.business-left {
+    width: 660px;
+    height: 625.6px;
+    margin: 0px 16px;
+    /* text-size-adjust: 100%; */
+    /* display: block;
+    flex: 1; */
+    /* min-height: 0;
+    min-width: 0; */
+    /* box-sizing: border-box; */
+    /* vertical-align: top; */
+    border-color: rgba(235,235,235,1);
+}
+
+.business-left-above {
+    width: 660px;
+    height: 254px;    
+    margin-top: 32px !important;
+    border-color: rgba(235,235,235,1);
+    /* border-collapse: collapse; */
+    /* border-spacing: 0; */
+}
+
+.hello {
+    width: 660px;
+    height: 36px;
+    margin-top: 16px !important;
+    border-color: rgba(235,235,235,1);
+    padding: 0px;
+    border: 0px;
+    font: inherit;
+    /* vertical-align: baseline; */
+    /* display: block; */
+    /* border-collapse: collapse; */
+    /* border-spacing: 0; */
+    /* text-size-adjust: 100%; */
+}
+
+.business-h1 {
+    /* width: 660px; */
+    height: 36px;
+    /* font-family: 'Poppins','Helvetica Neue',Helvetica,Arial,sans-serif; */
+    font-family: 'Helvetica';
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -0.4px;
+    line-height: 36px;
+    word-break: break-word !important;
+    /* overflow-wrap: break-word !important; */
+    color: rgba(45,46,47,1);
+    box-sizing: content-box
+}
+
+.business-right {
+    width: 724px;
+    height: 625.6px;
+    /* border-collapse: collapse; */
+    border-spacing: 0;
+    margin-left: 16px;
+    margin-right: 16px;
+}

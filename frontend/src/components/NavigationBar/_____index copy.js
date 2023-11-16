@@ -7,9 +7,9 @@ import './NavigationBar.css';
 import LoginFormPage from '../LoginFormPage';
 import SignupFormPage from '../SignupFormPage';
 import { openModal } from '../../store/ui';
-import { openPage } from '../../store/ui';
-import { closeModal } from '../../store/ui';
-import * as sessionActions from "../../store/session";
+import BusinessFormPage from '../BusinessFormPage';
+import { openPage } from '../../store/ui'
+import ImageCarousel from '../ImageCarousel';
 
 const NavigationBar = () => {
   
@@ -53,12 +53,6 @@ const NavigationBar = () => {
     dispatch(openPage("business"));
   }
 
-  const logout = (e) => {
-    e.preventDefault();
-    dispatch(sessionActions.logout());
-    dispatch(closeModal());
-  };
-
   // document.addEventListener('onload', () => {
   //   // Get references to the button and hidden content
   //   const businessButton = document.getElementById('business-button');
@@ -72,47 +66,25 @@ const NavigationBar = () => {
   // });
 
   const [isMenuOpen, setMenuOpen] = useState(false);
-  const toggleMenu = (e) => {
-    e.preventDefault();
+  const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
   };
 
   let button;
   if (!sessionUser) {
     button = 
-      (<>
-          <button
-            className='button-style' 
-            type="submit" 
-            onClick={openLogin}
-          >
-            <div className="button-text button-text-login" data-font-weight="semibold">
-              Log In
-            </div>
-          </button>
+      (<div id='business-pulldown'>
+        <div className='business-button pulldown-line'>
           <button 
-              className='button-style button-signup'
-              type="submit" 
-              onClick={openSignup}
-            >
-            <div className="button-text" data-font-weight="semibold" >
-              Sign Up
-            </div>
+            className='pulldown-line-button'
+            type="submit" 
+            onClick={openBusiness}>
+              Add a Business
           </button>
-        </>
-      );
-  } else {
-    button = (
-      <button 
-        className='button-style button-signup'
-        type="submit" 
-        onClick={logout}
-      >
-        <div className="button-text" data-font-weight="semibold" >
-          Log Out
         </div>
-      </button>
-    );
+      </div> );
+  } else {
+    button = <></>;
   }
 
   return (
@@ -123,7 +95,7 @@ const NavigationBar = () => {
         <div className='.outer-container2'>
           <div className='above'>
             <div className='yelp'>
-              {/* <img src="/src/components/NavigationBar/yelp_icon2.jpg"/> */}
+              <img src="/src/components/NavigationBar/yelp_icon2.jpg"/>
               
             </div>
             <div className='search'> 
@@ -133,27 +105,16 @@ const NavigationBar = () => {
             </div>
             <div className='right'>
               {/* <div className='business'> */}
-              <button className='business-button' onClick={(e) => toggleMenu(e)}>
+              <button className='business-button' onClick={toggleMenu}>
                 Yelp for Business
-                {/* <path d="M 8 10.25 a 0.746 0.746 0 0 1 -0.525 -0.215 l -3.055 -3 a 0.75 0.75 0 0 1 1.05 -1.07 L 8 8.449 l 2.53 -2.484 a 0.75 0.75 0 0 1 1.05 1.07 l -3.055 3 A 0.746 0.746 0 0 1 8 10.25 Z"></path> */}
+                <path d="M 8 10.25 a 0.746 0.746 0 0 1 -0.525 -0.215 l -3.055 -3 a 0.75 0.75 0 0 1 1.05 -1.07 L 8 8.449 l 2.53 -2.484 a 0.75 0.75 0 0 1 1.05 1.07 l -3.055 3 A 0.746 0.746 0 0 1 8 10.25 Z"></path>
               </button>
-              {isMenuOpen && 
-                (<div id='business-pulldown'>
-                  <div className='business-button pulldown-line'>
-                    <button 
-                      className='pulldown-line-button'
-                      type="submit" 
-                      onClick={openBusiness}>
-                        Add a Business
-                    </button>
-                  </div>
-                </div> )}
               <button className='business-button reviews-div'>
                 {/* <div className='reviews'>reviewsreviewsrevi</div> */}
                 Write a Review
               </button>
               <div className='buttons-div'>
-                {button}  
+                {button}
               </div>
               {/* <NavLink exact to="/">Home</NavLink> */}
               {/* {sessionLinks} */}

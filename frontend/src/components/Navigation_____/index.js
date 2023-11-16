@@ -4,6 +4,7 @@ import NavigationBar from '../NavigationBar';
 import ImageCarousel from '../ImageCarousel';
 import LoginFormPage from '../LoginFormPage';
 import SignupFormPage from '../SignupFormPage';
+import BusinessFormPage from '../BusinessFormPage';
 import { Route, Switch } from "react-router-dom";
 
 function Navigation() {
@@ -23,6 +24,7 @@ function Navigation() {
       {/* <SignupFormPage />  */}
 
       <ImageCarousel />
+      <BusinessFormPage />
       {/* <Footer /> */}
     </>
 

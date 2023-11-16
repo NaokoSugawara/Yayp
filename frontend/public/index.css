@@ -13,5 +13,11 @@
     font-feature-settings: inherit;
     font-variation-settings: inherit;
     vertical-align: baseline;
-    line-height: 1;background-image: url("https://s3-media0.fl.yelpcdn.com/educatorphoto/Sc48sSgQZ2wRgfLharzavg/o.jpg");
+    line-height: 1;
+    /* background-image: url("https://s3-media0.fl.yelpcdn.com/educatorphoto/Sc48sSgQZ2wRgfLharzavg/o.jpg"); */
 }
+
+/* .root {
+    display: flex;
+    flex-direction: column;
+} */

@@ -10,7 +10,7 @@ import { openModal } from '../../store/ui';
 
 const NavigationBar = ({login}) => {
 
-  debugger
+  // debugger
   let content = null;
   if ( !login ) {
     content = (

@@ -15,11 +15,15 @@ const LoginFormPage = () => {
   const [password, setPassword] = useState("");
   const [errors, setErrors] = useState([]);
   const modal = useSelector(state => state.ui.modal);
+  let login = false;
 
   // const [showLoginFormPage, setLoginFormPage] = useState(true);
   // let showLoginFormPage = true;
 
-  if (sessionUser) return <Redirect to="/" login={true} />;
+  if (sessionUser) {
+    login = true;
+    return <Redirect to="/" login={login} />;
+  }
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -56,6 +60,11 @@ const LoginFormPage = () => {
       { (modal === "login") && 
         <div className="login-modal-body" onClick={() => dispatch(closeModal())}>
           <div className="login-modal-content" onClick={(e) => e.stopPropagation()}>
+           { (errors.length > 0) ? (
+              <ul className="error">
+                {errors.map((error) => <li key={error}>{error}</li>)}
+              </ul>
+            ) : "" }
             <div className="close-button-div">
               <button className="close-button" onClick={() => dispatch(closeModal())}>
                 
@@ -85,9 +94,9 @@ const LoginFormPage = () => {
             </div>
             <div className="signin4">
               <form className="form" onSubmit={handleSubmit}>
-                <ul>
+                {/* <ul>
                   {errors.map(error => <li key={error}>{error}</li>)}
-                </ul>
+                </ul> */}
                 <div className="form-div1">
                   <div className="form-div2">
                     <div className="form-label">
