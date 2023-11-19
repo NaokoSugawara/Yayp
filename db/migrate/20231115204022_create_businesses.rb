@@ -8,7 +8,7 @@ class CreateBusinesses < ActiveRecord::Migration[7.0]
       t.string :zipcode
       t.integer :stars
       t.integer :review_count
-
+      t.string :hours
       t.timestamps
     end
   end

@@ -1,0 +1,372 @@
+.pictures {
+    width: 1519.2px;
+    height: 426px;
+    margin: 0 auto;
+    max-width: 1922px;
+    position: relative;
+    width: 100%;
+    border-color: rgba(235,235,235,1);
+
+    border:1px solid #333;
+}
+
+.pictures-inner {
+    width: 1272px;
+    height: 426px;
+    align-items: flex-end;
+    bottom: 0;
+    box-sizing: border-box;
+    display: flex;
+    left: 0;
+    margin: auto;
+    max-width: 1272px;
+    padding: 40px 64px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-color: rgba(235,235,235,1);
+
+    border:1px solid #333;
+}
+
+.details {
+    width: 923.4px;
+    height: 170px;
+    flex: 1 auto;
+    pointer-events: none;
+    position: relative;
+    z-index: 1;
+    padding-right: 16px !important;
+    border-color: rgba(235,235,235,1);
+
+    border:1px solid #333;
+}
+
+.details2 {
+    width: 939.4px;
+    height: 170px;
+    border-collapse: initial;
+    border-spacing: 16px 0;
+    margin-left: -16px;
+    margin-right: -16px;
+    display: table;
+    min-width: 100%;
+    table-layout: auto;
+    pointer-events: none;
+    display: flex;
+    flex-direction: row;
+
+    border:1px solid #333;
+}
+
+.restaurant-logo {
+    width: 101.6px;
+    height: 170px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-left: 8px;
+    margin-right: 8px;
+    box-sizing: border-box;
+    display: table-cell;
+    vertical-align: top;
+    border-color: rgba(235,235,235,1);
+
+    border:1px solid #333;
+}
+
+.restaurant-details {
+    width: 789.8px;
+    height: 170px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-left: 8px;
+    margin-right: 8px;
+    box-sizing: border-box;
+    display: table-cell;
+    vertical-align: top;
+    /* width: 100%; */
+    border-color: rgba(235,235,235,1);
+
+    border:1px solid #333;
+}
+
+.restaurant-name {
+    width: 789.8px;
+    height: 56px;
+    margin-bottom: 8px !important;
+    border-color: rgba(235,235,235,1);
+
+    border:1px solid #333;
+}
+
+.restaurant-name-h1 {
+    width: 785.74px;
+    height: 67.2px;
+    pointer-events: auto;
+    /* color: #fff; */
+    color: black;
+    font-family: 'Poppins','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-family: Helvetica;
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: -0.4px;
+    line-height: 56px;
+    word-break: break-word !important;
+    overflow-wrap: break-word !important;
+    display: inline;
+    border-collapse: collapse;
+    border-spacing: 0;
+
+    border:1px solid #333;
+}
+
+.rates {
+    width: 813.8px;
+    height: 32px;
+    border-collapse: initial;
+    border-spacing: 12px 0;
+    margin-left: -12px;
+    margin-right: -12px;
+    display: table;
+    min-width: 100%;
+    table-layout: auto;
+    margin-bottom: 16px !important;
+    border-color: rgba(235,235,235,1);
+
+    border:1px solid #333;
+}
+
+.categories {
+    width: 200px;
+    height: 17.6px;
+}
+
+.hours {
+    width: 789.8px;
+    height: 26px;
+    pointer-events: auto;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    -webkit-letter-spacing: 0px;
+    -moz-letter-spacing: 0px;
+    -ms-letter-spacing: 0px;
+    letter-spacing: 0px;
+    line-height: 24px;
+    color: rgba(255,255,255,1);
+    color: black;
+    text-align: left;
+    white-space: nowrap;
+    border-collapse: collapse;
+    border-spacing: 0;
+
+    border:1px solid #333;
+}
+
+.see-all {
+    width: 220.6px;
+    height: 48px;
+    flex: 0 auto;
+    white-space: nowrap;
+    position: relative;
+    z-index: 1;
+    border-color: rgba(235,235,235,1);
+
+    border:1px solid #333;
+}
+
+.middle-line {
+    width: 1519.2px;
+    margin-top: 16px !important;
+    border-color: rgba(235,235,235,1);
+
+    border:1px solid #333;
+}
+
+.below1 {
+    width: 1519.2px;
+    height: 11282.4px;
+    border-color: rgba(235,235,235,1);
+    margin: 0 auto;
+    max-width: 1144px;
+    padding: 0 40px;
+
+    border:1px solid #333;
+}
+
+.below2 {
+    width: 1224px;
+    height: 10956.6px;
+    margin: 0 auto;
+    max-width: 1144px;
+    padding: 0 40px;
+    border-color: rgba(235,235,235,1);
+
+    border:1px solid #333;
+}
+
+.below-contents-outer {
+    width: 1144px;
+    height: 8825.58px;
+    border-bottom: 1px solid rgba(235,235,235,1);
+    border-color: rgba(235,235,235,1);
+    -ms-flex-align: normal;
+    align-items: normal;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: normal;
+    justify-content: normal;
+    width: 100%;
+
+    border:1px solid #333;
+}
+
+.contents-left1 {
+    width: 762.66px;
+    height: 8824.78px;
+    padding-right: 16px !important;
+    border-color: rgba(235,235,235,1);
+    box-sizing: border-box;
+    width: calc(100% / 3 * 2);
+
+    border:1px solid #333;
+}
+
+
+
+
+.half-below-contents-left2 {
+    width: 746.66px;
+    height: 8566.38px;
+    margin-top: 24px !important;
+    margin-bottom: 24px !important;
+    border-color: rgba(235,235,235,1);
+
+    border:1px solid #333;
+}
+
+.reviews-etc {
+    width: 762.66px;
+    height: 44px;
+    border-collapse: initial;
+    border-spacing: 8px 0;
+    margin-left: -8px;
+    margin-right: -8px;
+    display: table;
+    min-width: 100%;
+    table-layout: auto;
+    border-color: rgba(235,235,235,1);
+
+    border:1px solid #333;
+}
+
+.reviews {
+    width: 175.08;
+    height: 44px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-left: 4px;
+    margin-right: 4px;
+    box-sizing: border-box;
+    display: table-cell;
+    vertical-align: top;
+    white-space: nowrap;
+    border-color: rgba(235,235,235,1);
+
+    border:1px solid #333;
+}
+
+.reviews-a {
+    width: 175.08;
+    height: 44px;
+    /* -webkit-text-decoration: none; */
+    text-decoration: none;
+    /* -webkit-align-items: center; */
+    -webkit-box-align: center;
+    /* -ms-flex-align: center; */
+    align-items: center;
+    /* -webkit-appearance: none; */
+    /* -moz-appearance: none; */
+    appearance: none;
+    background-image: none;
+    background-repeat: no-repeat;
+    border: 0;
+    border-radius: 4px;
+    box-shadow: none;
+    box-sizing: border-box;
+    /* display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox; */
+    display: inline-flex;
+    cursor: pointer;
+    height: 44px;
+    -webkit-box-pack: center;
+    /* -webkit-justify-content: center; */
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0px;
+    padding-bottom: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 10px;
+    position: relative;
+    text-align: center;
+    /* -webkit-transition: all 0.8s; */
+    transition: all 0.8s;
+    /* -webkit-transition-property: background-image,background-color,background-position,background-size,border-color,box-shadow,opacity; */
+    transition-property: background-image,background-color,background-position,background-size,border-color,box-shadow,opacity;
+    /* -webkit-user-select: none; */
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    vertical-align: middle;
+    width: auto;
+    background-color: rgba(224,7,7,1);
+    color: rgba(255,255,255,1);
+    background-position: calc(var(--mousedown-x) - calc(var(--button-width,100px) * 200) / 2) calc(var(--mousedown-y) - calc(var(--button-width,100px) * 200) / 2);
+    background-size: calc(var(--button-width,100px) * 200) calc(var(--button-width,100px) * 200);
+
+    border:1px solid #333;
+}
+
+.reviews-a-div {
+    width: 143.07px;
+    height: 24px;
+    border-color: rgba(235,235,235,1);
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 100%;
+
+    border:1px solid #333;
+}
+
+.order-food {
+    width: 381.34px;
+    height: 8824.78px;
+    
+}
+
+
+
+
+.half-below-contents-right {
+    width: 381.34px;
+    height: 8498.95px;
+    padding-left: 16px !important;
+    border-color: rgba(235,235,235,1);
+    box-sizing: border-box;
+    -webkit-box-flex: 4;
+    -ms-flex-positive: 4;
+    flex-grow: 4;
+    position: sticky;
+    align-self: start;
+    top: 0;
+    width: calc(100% / 3);
+}

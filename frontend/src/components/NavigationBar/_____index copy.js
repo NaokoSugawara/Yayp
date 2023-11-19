@@ -7,7 +7,7 @@ import './NavigationBar.css';
 import LoginFormPage from '../LoginFormPage';
 import SignupFormPage from '../SignupFormPage';
 import { openModal } from '../../store/ui';
-import BusinessFormPage from '../BusinessFormPage';
+import BusinessShowPage from '../BusinessShowPage';
 import { openPage } from '../../store/ui'
 import ImageCarousel from '../ImageCarousel';
 

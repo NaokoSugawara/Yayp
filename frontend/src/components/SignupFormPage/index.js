@@ -17,14 +17,16 @@ const SignupFormPage = () => {
   const [confirmPassword, setConfirmPassword] = useState("");
   const [errors, setErrors] = useState([]);
   const modal = useSelector(state => state.ui.modal);
+  
 
-  if (sessionUser) return <Redirect to="/" />;
+  // if (sessionUser) return <Redirect to="/" />;
 
   const handleSubmit = (e) => {
     e.preventDefault();
     // if (password === confirmPassword) {
       setErrors([]);
       return dispatch(sessionActions.signup({ email, password, first_name, last_name, zipcode }))
+        .then(() => dispatch(closeModal()))
         .catch(async (res) => {
         let data;
         try {

@@ -10,6 +10,7 @@ import { openModal } from '../../store/ui';
 import { openPage } from '../../store/ui';
 import { closeModal } from '../../store/ui';
 import * as sessionActions from "../../store/session";
+import yelp_log from "./yelp_icon.png"
 
 const NavigationBar = () => {
   
@@ -119,11 +120,11 @@ const NavigationBar = () => {
     <>
       <LoginFormPage />
       <SignupFormPage />
-      <div className='outer-container'>
+      <div className='outer-container' onClick={(e) => toggleMenu(e)}>
         <div className='.outer-container2'>
           <div className='above'>
             <div className='yelp'>
-              {/* <img src="/src/components/NavigationBar/yelp_icon2.jpg"/> */}
+              <img src={yelp_log}/>
               
             </div>
             <div className='search'> 
@@ -135,7 +136,6 @@ const NavigationBar = () => {
               {/* <div className='business'> */}
               <button className='business-button' onClick={(e) => toggleMenu(e)}>
                 Yelp for Business
-                {/* <path d="M 8 10.25 a 0.746 0.746 0 0 1 -0.525 -0.215 l -3.055 -3 a 0.75 0.75 0 0 1 1.05 -1.07 L 8 8.449 l 2.53 -2.484 a 0.75 0.75 0 0 1 1.05 1.07 l -3.055 3 A 0.746 0.746 0 0 1 8 10.25 Z"></path> */}
               </button>
               {isMenuOpen && 
                 (<div id='business-pulldown'>

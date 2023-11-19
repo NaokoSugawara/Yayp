@@ -20,15 +20,16 @@ const LoginFormPage = () => {
   // const [showLoginFormPage, setLoginFormPage] = useState(true);
   // let showLoginFormPage = true;
 
-  if (sessionUser) {
-    login = true;
-    return <Redirect to="/" login={login} />;
-  }
+  // if (sessionUser) {
+  //   login = true;
+  //   return <Redirect to="/" login={login} />;
+  // }
 
   const handleSubmit = (e) => {
     e.preventDefault();
     setErrors([]);
     return dispatch(sessionActions.login({ credential, password }))
+      .then(() => dispatch(closeModal()))
       .catch(async (res) => {
         let data;
         try {

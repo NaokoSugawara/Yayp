@@ -4,11 +4,18 @@ import LoginFormPage from "./components/LoginFormPage";
 import SignupFormPage from "./components/SignupFormPage";
 import NavigationBar from './components/NavigationBar';
 import ImageCarousel from './components/ImageCarousel';
-import BusinessFormPage from './components/BusinessFormPage';
+import BusinessShowPage from './components/BusinessShowPage';
 
 function App() {
   return (
     <>
+      <div className="main">
+        <NavigationBar />
+
+        {/* <ImageCarousel /> */}
+        {/* <BusinessShowPage /> */}
+      </div>
+
       <Switch>
         <Route path="/login" >
           <LoginFormPage />
@@ -16,14 +23,10 @@ function App() {
         <Route path="/signup">
           <SignupFormPage />
         </Route>
+        <Route path="/businesses/:id">
+          <BusinessShowPage />
+        </Route>
       </Switch> 
-
-      <div className="main">
-        <NavigationBar />
-
-        <ImageCarousel />
-        <BusinessFormPage />
-      </div>
 
       {/* <Footer /> */}
     </>

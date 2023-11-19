@@ -206,6 +206,7 @@ button {
   left: 20px;
   background-color: rgba(255,255,255,1);
   /* background-color: gray; */
+  box-shadow: 0 0 8px gray;
 }
 
 .pulldown-line {
