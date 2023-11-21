@@ -58,8 +58,8 @@ const BusinessShowPage = () => {
       {/* { (pageType === "business") &&  */}
 
         <div className="pictures">
-            { business.photos.map ((photo) => <img height="426px" src={photo}></img>)}
-            {/* { business.photos.map ((photo) => <BusinessCarousel images={images} />) } */}
+            {/* { business.photos.map ((photo) => <img height="426px" src={photo}></img>)} */}
+            <BusinessCarousel images={business.photos} />
           <div className="pictures-inner">
             <div className="details">
               <div className="details2">
