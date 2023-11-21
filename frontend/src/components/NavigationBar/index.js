@@ -10,7 +10,7 @@ import { openModal } from '../../store/ui';
 import { openPage } from '../../store/ui';
 import { closeModal } from '../../store/ui';
 import * as sessionActions from "../../store/session";
-import yelp_log from "./yelp_icon.png"
+import logo from "./yelp-logo.png"
 
 const NavigationBar = () => {
   
@@ -40,11 +40,13 @@ const NavigationBar = () => {
 
   const openLogin = (e) => {
     e.preventDefault();
+    e.stopPropagation()
     dispatch(openModal("login"));
   }
   
   const openSignup = (e) => {
     e.preventDefault();
+    e.stopPropagation()
     dispatch(openModal("signup"));
   }
 
@@ -124,7 +126,7 @@ const NavigationBar = () => {
         <div className='.outer-container2'>
           <div className='above'>
             <div className='yelp'>
-              <img src={yelp_log}/>
+              <img src={logo}/>
               
             </div>
             <div className='search'> 

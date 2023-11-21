@@ -11,9 +11,6 @@ function App() {
     <>
       <div className="main">
         <NavigationBar />
-
-        {/* <ImageCarousel /> */}
-        {/* <BusinessShowPage /> */}
       </div>
 
       <Switch>
@@ -25,6 +22,9 @@ function App() {
         </Route>
         <Route path="/businesses/:id">
           <BusinessShowPage />
+        </Route>
+        <Route path="/" >
+          <ImageCarousel />
         </Route>
       </Switch> 
 

@@ -367,6 +367,10 @@ button {
   /* z-index: 0; */
 }
 
+/* .button-style:hover {
+  background-color: rgba(224,7,7,1, 0.5); /* Half-transparent white on hover 
+} */
+
 .button-text {
   font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
   /* font-size: 12px; */
@@ -396,7 +400,12 @@ button {
 
 .button-text-login {
   color: black;
+  
 }
+
+/* .button-text-login:hover {
+  background-color: rgba(224,7,7,1, 0.5); /* Half-transparent white on hover 
+} */
 
 .button-signup {
   background-color: rgba(224,7,7,1);

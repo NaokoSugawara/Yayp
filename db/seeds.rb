@@ -52,6 +52,7 @@ require "open-uri"
     review_count:"500", 
     hours:"5:00 PM - 11:00 PM" })
 
+  business1.logo.attach(io: URI.open("https://yayp-seeds.s3.us-east-2.amazonaws.com/nara_logo.jpg"), filename: 'nara_logo.jpg')
   business1.photos.attach(io: URI.open("https://yayp-seeds.s3.us-east-2.amazonaws.com/nara1.jpg"), filename: 'nara1.jpg')
   business1.photos.attach(io: URI.open("https://yayp-seeds.s3.us-east-2.amazonaws.com/nara2.jpg"), filename: 'nara2.jpg')
   business1.photos.attach(io: URI.open("https://yayp-seeds.s3.us-east-2.amazonaws.com/nara3.jpg"), filename: 'nara3.jpg')
@@ -86,6 +87,7 @@ require "open-uri"
     review_count:"2000", 
     hours:"M 10:00 am - 10:00 pm, T 10:00 am - 10:00 pm, W 10:00 am - 10:00 pm" })
 
+  business3.logo.attach(io: URI.open("https://yayp-seeds.s3.us-east-2.amazonaws.com/7th_logo.jpg"), filename: '7th_logo.jpg')
   business3.photos.attach(io: URI.open("https://yayp-seeds.s3.us-east-2.amazonaws.com/yayp-pics/348s+(1).jpg"), filename: '348s+(1).jpg')
   business3.photos.attach(io: URI.open("https://yayp-seeds.s3.us-east-2.amazonaws.com/yayp-pics/348s+(2).jpg"), filename: '348s+(2).jpg')
   business3.photos.attach(io: URI.open("https://yayp-seeds.s3.us-east-2.amazonaws.com/yayp-pics/348s+(3).jpg"), filename: '348s+(3).jpg')

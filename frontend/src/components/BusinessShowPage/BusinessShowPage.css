@@ -16,7 +16,6 @@
     align-items: flex-end;
     bottom: 0;
     box-sizing: border-box;
-    display: flex;
     left: 0;
     margin: auto;
     max-width: 1272px;
@@ -25,6 +24,8 @@
     right: 0;
     top: 0;
     border-color: rgba(235,235,235,1);
+    display: flex;
+    flex-direction: row;
 
     border:1px solid #333;
 }
@@ -34,7 +35,7 @@
     height: 170px;
     flex: 1 auto;
     pointer-events: none;
-    position: absolute;
+    /* position: absolute; */
     z-index: 1;
     padding-right: 16px !important;
     border-color: rgba(235,235,235,1);
@@ -72,6 +73,19 @@
     border-color: rgba(235,235,235,1);
 
     border:1px solid #333;
+}
+
+.restaurant-logo-img {
+    border: 1px solid #e3e3e3;
+    position: relative;
+    top: -5px;
+    background: #fff;
+    border-radius: 50%;
+    height: 100px;
+    aspect-ratio: auto 100 / 100;
+    width: 100px;
+    overflow-clip-margin: content-box;
+    overflow: clip;
 }
 
 .restaurant-details {
@@ -154,13 +168,64 @@
     letter-spacing: 0px;
     line-height: 24px;
     color: rgba(255,255,255,1);
-    color: black;
     text-align: left;
     white-space: nowrap;
     border-collapse: collapse;
     border-spacing: 0;
 
     border:1px solid #333;
+}
+
+.hours-left1 {
+    width: 299.4px;
+    height: 26px;
+    vertical-align: middle;
+    box-sizing: border-box;
+    display: table-cell;
+    border-color: rgba(235,235,235,1);
+}   
+
+.hours-left2 {
+    width: 299.4px;
+    height: 24px;
+    white-space: nowrap;
+    border-color: rgba(235,235,235,1);
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.hours-left3 {
+    width: 287.4px;
+    height: 24px;
+    display: inline-block;
+    margin-right: 12px !important;
+    border-color: rgba(235,235,235,1);
+    white-space: nowrap;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.open-span {
+    width: 41.94px;
+    height: 21.6px;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    -webkit-letter-spacing: 0px;
+    -moz-letter-spacing: 0px;
+    -ms-letter-spacing: 0px;
+    letter-spacing: 0px;
+    line-height: 24px;
+    color: rgba(4,197,133,1);
+    text-align: left;
+}
+
+.hours-span {
+    width: 237.46px;
+    height: 17.6px;
+    display: inline;
+    margin-left: 8px !important;
+    border-color: rgba(235,235,235,1);
 }
 
 .see-all {
@@ -174,6 +239,61 @@
 
     border:1px solid #333;
 }
+
+.see-all-span {
+    width: 204.6px;
+    height: 17.6px;
+    display: inline;
+    margin-left: 16px !important;
+    border-color: rgba(235,235,235,1);
+}
+
+.see-all-a {
+    width: 204.6px;
+    height: 48px;
+    text-decoration: none;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: none;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+    box-shadow: none;
+    box-sizing: border-box;
+    display: inline-flex;
+    cursor: pointer;
+    height: 48px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0px;
+    padding-bottom: 12px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 12px;
+    position: relative;
+    text-align: center;
+    transition: all 0.8s;
+    transition-property: background-image,background-color,background-position,background-size,border-color,box-shadow,opacity;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    vertical-align: middle;
+    width: auto;
+    background-color: transparent;
+    border: 1px solid rgba(200,201,202,1);
+    color: rgba(255,255,255,1);
+    background-position: calc(var(--mousedown-x) - calc(var(--button-width,100px) * 200) / 2) calc(var(--mousedown-y) - calc(var(--button-width,100px) * 200) / 2);
+    background-size: calc(var(--button-width,100px) * 200) calc(var(--button-width,100px) * 200);
+    transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+
+.see-all-a:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Half-transparent white on hover */
+  }
 
 .middle-line {
     width: 1519.2px;
@@ -345,16 +465,17 @@
 }
 
 .review-star {
-    width: 24px;
+    width: 32px;
     height: 24px;
-    padding-right: 8px !important;
+    /* padding-right: 8px !important; */
     border-color: rgba(235,235,235,1);
+    cursor: pointer;
+    text-align: center;
+    user-select: none;
     color: rgba(255,255,255,1);
 }
 
 .review-star-span {
-    width: 24px;
-    height: 24px;
     width: 24px;
     height: 24px;
     display: inline-block;
@@ -370,8 +491,22 @@
     width: 111.08px;
     height: 24px;
     border-color: rgba(235,235,235,1);
+    cursor: pointer;
+    text-align: center;
+    user-select: none;
 }
 
+span.reset-styles {
+    /* Reset all styles to their default values */
+    all: unset;
+  
+    /* Add your custom styles here if needed */
+    /* For example: */
+    display: inline; /* Reset display property to inline */
+    color: inherit; /* Reset text color to inherit from the parent */
+    font-weight: normal; /* Reset font weight to normal */
+  }
+  
 .writeareview-span {
     width: 111.08px;
     height: 22.4px;
@@ -398,17 +533,7 @@
 }
 
 
-
-.order-food {
-    width: 381.34px;
-    height: 8824.78px;
-    
-}
-
-
-
-
-.half-below-contents-right {
+.contents-right {
     width: 381.34px;
     height: 8498.95px;
     padding-left: 16px !important;
@@ -421,4 +546,149 @@
     align-self: start;
     top: 0;
     width: calc(100% / 3);
+
+    border:1px solid #333;
+}
+
+.orderfood-aside {
+    width: 365.34px;
+    height: 476px;
+    display: flex;
+    flex-direction: column;
+
+    border:1px solid #333;
+}
+
+.orderfood-aside-top {
+    width: 365.34px;
+    height: 0px;
+    margin-top: 24px !important;
+    border-color: rgba(235,235,235,1);
+
+    border:1px solid #333;
+}
+
+.orderfood-aside-below {
+    width: 365.34px;
+    height: 245.6px;
+    margin-bottom: 16px !important;
+    border-color: rgba(235,235,235,1);
+
+    border:1px solid #333;
+}
+
+.orderfood-aside-section {
+    width: 365.34px;
+    height: 245.6px;
+    border-color: rgba(235,235,235,1);
+
+    border:1px solid #333;
+}
+
+.orderfood-aside-section-inner1 {
+    width: 365.34px;
+    height: 245.6px;
+    background-color: rgba(255,255,255,1);
+    padding-top: 16px !important;
+    padding-right: 16px !important;
+    padding-bottom: 16px !important;
+    padding-left: 16px !important;
+    border-top: 1px solid rgba(235,235,235,1);
+    border-right: 1px solid rgba(235,235,235,1);
+    border-bottom: 1px solid rgba(235,235,235,1);
+    border-left: 1px solid rgba(235,235,235,1);
+    border-radius: 4px;
+    border-style: solid;
+    box-sizing: border-box;
+
+    border:1px solid #333;
+}
+
+.orderfood-aside-section-inner2 {
+    width: 331.74px;
+    height: 212px;
+    border-color: rgba(235,235,235,1);
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font: inherit;
+    vertical-align: baseline;
+
+    border:1px solid #333;
+}
+
+.orderfood-text {
+    width: 331.74px;
+    height: 28px;
+
+    border:1px solid #333;
+}
+
+.orderfood-text2 {
+    width: 108.99px;
+    height: 28px;
+    display: inline-block;
+    border-color: rgba(235,235,235,1);
+}
+
+.orderfood-text-h2 {
+    width: 108.99px;
+    height: 28px;
+    font-family: Poppins, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.4px;
+    line-height: 28px;
+    color: rgb(45, 46, 47);
+    word-break: break-word !important;
+    overflow-wrap: break-word !important;
+    display: block;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.tabs {
+    width: 190.08px;
+    height: 48px;
+    display: inline-block;
+    border-color: rgb(235, 235, 235);
+    margin-top: 24px !important;
+    margin-bottom: 8px !important;
+}
+
+.below-tabs {
+    width: 331.74px;
+    height: 20px;
+    margin-top: 16px !important;
+    border-color: rgba(235,235,235,1);
+}
+
+.above-startorder {
+    width: 331.74px;
+
+}
+
+.slick-arrow.slick-prev {
+    width: 24;
+    height:24;
+    position: absolute;
+    left: 18px;
+    z-index: 100;
+
+}
+
+.slick-arrow.slick-next {
+    position: absolute;
+    right: 18px;
+    z-index: 100;
+
+}
+
+.slick-arrow.slick-prev::before, .slick-arrow.slick-next::before {
+    display: inline-block;
+    transform: scale(1.9);
 }
