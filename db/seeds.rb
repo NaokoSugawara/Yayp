@@ -48,6 +48,8 @@ require "open-uri"
     city: "San Francisco", 
     state:"CA", 
     zipcode:"94117", 
+    website:"naraonhaight.com",
+    tel:"(415) 417-0518",
     stars:"4.6", 
     review_count:"500", 
     hours:"5:00 PM - 11:00 PM" })
@@ -66,6 +68,8 @@ require "open-uri"
     city: "New York", 
     state:"NY", 
     zipcode:"10016", 
+    website:"wokuninyc.com",
+    tel:"(212) 447-1212",
     stars:"4.1", 
     review_count:"300", 
     hours:"11:30 AM - 2:45 PM, 5:00 PM - 8:45 PM" })
@@ -83,6 +87,8 @@ require "open-uri"
     city: "New York", 
     state:"NY", 
     zipcode:"10018", 
+    website:"7thstreetburger.com",
+    tel:"",
     stars:"4.8", 
     review_count:"2000", 
     hours:"M 10:00 am - 10:00 pm, T 10:00 am - 10:00 pm, W 10:00 am - 10:00 pm" })

@@ -14,7 +14,7 @@
 
 json.business do
     json.set! @business.id do
-         json.extract!  @business, :id, :name, :address, :city, :state, :zipcode, :stars, :review_count, :hours
+         json.extract!  @business, :id, :name, :address, :city, :state, :zipcode, :website, :tel, :stars, :review_count, :hours
          json.photos @business.photos.attached? ? @business.photos.map{ |photo| photo.url } : nil
          json.logo @business.logo.attached? ? @business.logo.url : nil
     end
