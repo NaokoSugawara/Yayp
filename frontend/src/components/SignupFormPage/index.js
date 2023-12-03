@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Redirect } from "react-router-dom";
 import * as sessionActions from "../../store/session";
 import './SignupForm.css';
-import { closeModal } from "../../store/ui";
+import { openModal, closeModal } from "../../store/ui";
 
 const SignupFormPage = () => {
 
@@ -118,7 +118,7 @@ const SignupFormPage = () => {
               <div className="bottom">
                 <p className="bottom-p">
                   "Already on Yelp? "
-                  <button className="bottom-login">
+                  <button className="bottom-login" onClick={() => dispatch(openModal("login"))}>
                     <span className="login-span">Log in</span>
                   </button>
                 </p>

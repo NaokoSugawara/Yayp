@@ -8,6 +8,9 @@
     background-color: rgba(0, 0, 0, 0.5); 
     overflow: auto;
     z-index: 10;
+
+    display:  table-cell;       /* テーブルセルにする */
+    vertical-align:  middle;    /* 中央寄せ */
   }
 
 .login-modal-content {
